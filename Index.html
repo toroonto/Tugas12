@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hearts" class="falling-hearts"></div>
+
+    <div class="container">
+        <h1 id="the-letters-are-out" class="title animate-in">The Letters Are Out</h1>
+
+        <div class="photo-grid">
+            <div class="photo-card" onclick="expandPhoto(this)">
+                <div class="photo-frame">
+                    <img src="Segio.jpg" alt="Segio">
+                    <div class="photo-overlay">
+                        <span>Click to expand</span>
+                    </div>
+                </div>
+                <div class="name">Segio</div>
+            </div>
+
+            <div class="photo-card" onclick="expandPhoto(this)">
+                <div class="photo-frame">
+                    <img src="Us.jpg" alt="Us">
+                    <div class="photo-overlay">
+                        <span>Click to expand</span>
+                    </div>
+                </div>
+                <div class="name">Us</div>
+            </div>
+
+            <div class="photo-card" onclick="expandPhoto(this)">
+                <div class="photo-frame">
+                    <img src="Jeremiah.jpg" alt="Jeremiah">
+                    <div class="photo-overlay">
+                        <span>Click to expand</span>
+                    </div>
+                </div>
+                <div class="name">Jeremiah</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-content reveal-letter">
+                <h2>Dear Jeremiah,</h2>
+                <p>
+                    Have you ever wondered why the stars shine so brightly when we're
+                    together? I think it's because even the universe celebrates our love.
+                    Every time I look at you, I discover something new to fall in love with
+                    the way your eyes crinkle when you laugh, the gentle touch of your hand,
+                    the kindness you show to everyone around you. I never believed in love
+                    at first sight until that moment. Now, each day with you feels like
+                    falling in love all over again. You've colored my world in ways I never
+                    imagined possible. Before you, life was in black and white; now, every
+                    day is painted in the most beautiful shades of love and joy. In my arms,
+                    I've found more than love, I've found my home, my safe haven, my love.
+                    You understand my silences, celebrate my victories, and comfort me
+                    through my struggles. With you, I don't need to pretend to be someone
+                    else. You love me completely, wholly, just as I am.
+                </p>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <h3>Play Me, Dear</h3>
+            <audio controls>
+                <source src="Dress.mp3" type="audio/mpeg">
+            <div class="custom-player">
+                <button id="playBtn" onclick="togglePlay()">
+                    <i class="play-icon"></i>
+                </button>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="time">0:00</span>
+            </div>
+            <audio id="audioPlayer">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </div>
+    </div>
+
+    <!-- Modal for expanded photos -->
+    <div id="photoModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img id="expandedPhoto" src="" alt="Expanded photo">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
